@@ -1,0 +1,29 @@
+.about-mainDiv{
+    background-color:#ede7c5;
+}
+.about-heading{
+    text-align: center;
+}
+.about-heading-para{
+    text-align: center;
+}
+.about-img{
+    height: 420px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+.image-div{
+    text-align: center;
+}
+.about-about-me{
+    padding: 0 15px 0 15px;
+    font-size: 1rem;
+}
+.about-about-me-heading{
+    padding-left: 20px;
+}
+.about-detail{
+    padding: 0 10px 0 10px;
+}

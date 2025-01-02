@@ -1,0 +1,23 @@
+.experience-mainDiv{
+    background-color: #ede7c5;
+    padding-bottom: 3%;
+}
+.experience-dot-div{
+    display: flex;
+    justify-content: center;
+}
+.experience-exp1,.experience-exp2{
+    padding: 2%;
+    margin-top: 3%;
+    border: 1px solid;
+    width: 90%;
+    height: 45%;
+}
+.experience-exp1:hover{
+    box-shadow: 5px 5px 8px black ;
+    transition: 1s ease-out;
+}
+.experience-exp2:hover{
+    box-shadow: 5px 5px 8px black ;
+    transition: 1s ease-out;
+}

@@ -1,0 +1,51 @@
+.footer-ion-icon {
+    position: relative;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-ion-icon span {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-ion-icon span ion-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 0;
+}
+
+.footer-link {
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    color: white;
+}
+.footer-link:hover{
+    color: rgb(200, 37, 37);
+    transition: 1s;
+}
+.footer-ion-icon p {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 0;
+}

@@ -1,0 +1,53 @@
+.navbar-mainDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2%;
+    margin-bottom: 0 !important;
+    
+}
+.navBar-main-logo {
+    position: absolute;
+    left: 0;
+    color: rgb(246, 65, 65);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-left: 5%;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.navbar-contact-button{
+    position: absolute;
+    right: 0;
+    margin-right: 6%;
+    font-size: 1rem;
+    padding: 3px 10px 3px 10px;
+    border: none;
+    border-radius: 3px ;
+}
+.navbar-mobile-button{
+    display: none;
+}
+.navbar-ul {
+    display: inline-block;
+}
+@media screen and (max-width: 995px){
+    .navbar-ul{
+        display: none;
+    }
+    .navbar-mobile-button{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .navbar-mainDiv{
+        justify-content: end;
+        padding:2%;
+    }
+    .navbar-toggle-icon{
+        padding: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 "use client";
-import { useMotionValue } from "framer-motion";
+import { useMotionValue, MotionValue } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -10,8 +10,8 @@ interface EvervaultCardProps {
 }
 
 interface CardPatternProps {
-  mouseX: any; 
-  mouseY: any;
+  mouseX: MotionValue<number>; // Replace `any` with `MotionValue<number>`
+  mouseY: MotionValue<number>; // Replace `any` with `MotionValue<number>`
   randomString: string;
 }
 

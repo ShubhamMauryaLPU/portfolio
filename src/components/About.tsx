@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
+
 const About = () => {
   return (
     <div className="py-12 bg-gray-900">
@@ -10,7 +12,7 @@ const About = () => {
             Hello!
           </p>
           <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
-            I'm creative MERN stack developer
+            I&apos;m a creative MERN stack developer
           </h2>
         </div>
       </div>
@@ -19,10 +21,12 @@ const About = () => {
           <div className="flex justify-center">
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
               <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow w-[350px]">
-                <img
-                  src="./image/myImg3.png"
-                  alt=""
+                <Image
+                  src="/image/myImg3.png"
+                  alt="Description of the image"
                   className="rounded-lg h-96"
+                  width={280}
+                  height={500}
                 />
               </div>
             </BackgroundGradient>
@@ -49,25 +53,26 @@ const About = () => {
                   </div>
                   <p className="pl-2">
                     <div>
-                      <b>Langueage: </b>c , c++, java, javascript, php, sql
+                      <b>Language: </b> C, C++, Java, JavaScript, PHP, SQL
                     </div>
                     <div>
-                      <b>Framework: </b>express js, Bootstrap, Laravel, Tailwind
+                      <b>Framework: </b>Express.js, Bootstrap, Laravel, Tailwind
                     </div>
                     <div>
-                      <b>Library/ Tool: </b> html, css, react js
+                      <b>Library/Tool: </b>HTML, CSS, React.js
                     </div>
                     <div>
-                      <b>Databases: </b> Mysql ,Mongo db
+                      <b>Databases: </b>MySQL, MongoDB
                     </div>
                     <div>
-                      <b>Plateform:</b> Windows, Linux, VS code
+                      <b>Platform: </b>Windows, Linux, VS Code
                     </div>
                   </p>
                 </p>
               </div>
             </BackgroundGradient>
           </div>
+
           <div className="flex justify-center">
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
               <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
@@ -75,18 +80,10 @@ const About = () => {
                   About Me
                 </p>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                  I am a versatile web developer, beginning my career as a
-                  fresher with a strong skill set in both frontend and backend
-                  development. I have the good knowledge of databases like SQL
-                  and Mongo DB.
+                  I am a versatile web developer, beginning my career as a fresher with a strong skill set in both frontend and backend development. I have good knowledge of databases like SQL and MongoDB.
                 </p>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                  I have a strong command of frontend technologies, including
-                  HTML, CSS, JavaScript, and the React.js library. On the
-                  backend, I am proficient in Node.js along with the Express.js
-                  framework. Additionally, I have experience working with PHP
-                  and the Laravel framework to build robust and scalable web
-                  applications.
+                  I have a strong command of frontend technologies, including HTML, CSS, JavaScript, and the React.js library. On the backend, I am proficient in Node.js along with the Express.js framework. Additionally, I have experience working with PHP and the Laravel framework to build robust and scalable web applications.
                 </p>
               </div>
             </BackgroundGradient>

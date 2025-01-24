@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image"; // Import Image component from next/image
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import "./HomeSection.css";
+
 function HeroSection() {
   return (
     <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
@@ -13,7 +15,7 @@ function HeroSection() {
         <div className="lg:w-2/3 w-full text-center lg:text-left lg:mb-0 lg:pl-12 lg:pt-20 md:pt-64 bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
           <h3 className="text-lg font-semibold">Hi</h3>
           <h2 className="text-2xl font-bold">
-            I'm <span className="text-red-600">Shubham Maurya</span>
+            I&apos;m <span className="text-red-600">Shubham Maurya</span>
           </h2>
           <h2 className="text-xl font-medium">a MERN stack developer</h2>
           <p className="mt-4">
@@ -52,10 +54,12 @@ function HeroSection() {
           </div>
         </div>
         <div className="lg:w-1/3 w-full flex justify-center sm:pt-10">
-          <img
-            src="../image/myImg11.png"
+          <Image
+            src="/image/myImg11.png"
             alt="Shubham Maurya"
-            className=" h-[28rem] rounded-lg rounded-b-3xl  object-cover"
+            width={300}
+            height={500}
+            className="h-[28rem] rounded-lg rounded-b-3xl object-cover"
           />
         </div>
       </div>

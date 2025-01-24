@@ -4,36 +4,45 @@ import React, { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const EvervaultCard = ({
-  text,
-  className,
-}: {
+interface EvervaultCardProps {
   text?: string;
   className?: string;
-}) => {
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+}
 
-  const [randomString, setRandomString] = useState("");
+interface CardPatternProps {
+  mouseX: any; 
+  mouseY: any;
+  randomString: string;
+}
+
+export const EvervaultCard: React.FC<EvervaultCardProps> = ({ text, className }) => {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const [randomString, setRandomString] = useState<string>("");
 
   useEffect(() => {
-    let str = generateRandomString(1500);
+    const str = generateRandomString(1500);
     setRandomString(str);
   }, []);
 
-  function onMouseMove({ currentTarget, clientX, clientY }: any) {
-    let { left, top } = currentTarget.getBoundingClientRect();
+  const onMouseMove = ({
+    currentTarget,
+    clientX,
+    clientY,
+  }: React.MouseEvent<HTMLDivElement>) => {
+    const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
     const str = generateRandomString(1500);
     setRandomString(str);
-  }
+  };
 
   return (
     <div
       className={cn(
-        "p-0.5  bg-transparent aspect-square  flex items-center justify-center w-full h-full relative",
+        "p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative",
         className
       )}
     >
@@ -47,8 +56,7 @@ export const EvervaultCard = ({
           randomString={randomString}
         />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
-            
+          <div className="relative h-44 w-44 rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <span className="dark:text-white text-black z-20">{text}</span>
           </div>
         </div>
@@ -57,13 +65,17 @@ export const EvervaultCard = ({
   );
 };
 
-export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
-  let style = { maskImage, WebkitMaskImage: maskImage };
+export const CardPattern: React.FC<CardPatternProps> = ({
+  mouseX,
+  mouseY,
+  randomString,
+}) => {
+  const maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+      <div className="absolute inset-0 rounded-2xl [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
         className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
         style={style}
@@ -78,11 +90,12 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
       </motion.div>
     </div>
   );
-}
+};
 
 const characters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-export const generateRandomString = (length: number) => {
+
+export const generateRandomString = (length: number): string => {
   let result = "";
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -90,7 +103,7 @@ export const generateRandomString = (length: number) => {
   return result;
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

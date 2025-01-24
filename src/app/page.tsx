@@ -1,6 +1,3 @@
-import Navbar from "@/components/Navbar";
-import { div } from "framer-motion/client";
-import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import About from "@/components/About";

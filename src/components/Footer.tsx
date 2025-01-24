@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">About Me</h2>
           <p className="mb-4">
-            I'am a skilled MERN stack developer hailing from Chandauli, a serene
+            I&apos;m a skilled MERN stack developer hailing from Chandauli, a serene
             district near the historic city of Varanasi. With a strong
             foundation in web technologies like React, Node.js, MongoDB,
             and in building responsive and interactive applications.

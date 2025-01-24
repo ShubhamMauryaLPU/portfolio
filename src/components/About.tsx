@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { BackgroundGradient } from "./ui/background-gradient";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 const About = () => {
   return (
     <div className="py-12 bg-gray-900">
@@ -19,33 +19,55 @@ const About = () => {
           <div className="flex justify-center">
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
               <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow w-[350px]">
-                <img src="./image/myImg3.png" alt="" className="rounded-lg h-96" />
+                <img
+                  src="./image/myImg3.png"
+                  alt=""
+                  className="rounded-lg h-96"
+                />
               </div>
             </BackgroundGradient>
           </div>
 
-            <div className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
-                <div className="p-4 sm:p-6 flex flex-col items-center  flex-grow">
-                  <p className="text-lg sm:text-xl text-black mt-4 mb-2 text-center dark:text-neutral-200">
-                    Detail
+          <div className="flex justify-center">
+            <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <div className="p-4 sm:p-6 flex flex-col items-center  flex-grow">
+                <p className="text-lg sm:text-xl text-black mt-4 text-center dark:text-neutral-200">
+                  Detail
+                </p>
+                <p className=" text-neutral-600 dark:text-neutral-400 flex-grow text-base">
+                  <div>
+                    <b>Name: </b>Shubham Kumar Maurya
+                  </div>
+                  <div>
+                    <b>Age: </b>23 Years
+                  </div>
+                  <div>
+                    <b>Location: </b>GT Road Chandauli Uttar Pradesh, 232104
+                  </div>
+                  <div className="lg:pt-7">
+                    <b>Skills: </b>
+                  </div>
+                  <p className="pl-2">
+                    <div>
+                      <b>Langueage: </b>c , c++, java, javascript, php, sql
+                    </div>
+                    <div>
+                      <b>Framework: </b>express js, Bootstrap, Laravel, Tailwind
+                    </div>
+                    <div>
+                      <b>Library/ Tool: </b> html, css, react js
+                    </div>
+                    <div>
+                      <b>Databases: </b> Mysql ,Mongo db
+                    </div>
+                    <div>
+                      <b>Plateform:</b> Windows, Linux, VS code
+                    </div>
                   </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                    <p><b>Name: </b>Shubham Kumar Maurya</p>
-                    <p><b>Age: </b>23 Years</p>
-                    <p><b>Location: </b>GT Road Chandauli Uttar Pradesh, 232104</p>
-                    <p className="lg:pt-7"><b>Skills: </b></p>
-                    <p className="pl-2">
-                    <p><b>Langueage: </b>c , c++, java, javascript, php, sql</p>
-                    <p><b>Framework: </b>express js, Bootstrap, Laravel, Tailwind</p>
-                    <p><b>Library/ Tool: </b> html, css, react js</p>
-                    <p><b>Databases: </b>  Mysql ,Mongo db</p>
-                    <p><b>Plateform:</b> Windows, Linux, VS code</p>
-                    </p>
-                  </p>
-                </div>
-              </BackgroundGradient>
-            </div>
+                </p>
+              </div>
+            </BackgroundGradient>
+          </div>
           <div className="flex justify-center">
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
               <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">

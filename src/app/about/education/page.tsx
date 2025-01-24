@@ -8,6 +8,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 const Page = () => {
   return (
     <div className="min-h-screen bg-black py-12 pt-36">
+      <h1 className="text-center text-3xl mb-4 font-bold text-slate-300">My Colleges</h1>
       <div className="flex flex-wrap justify-center">
         {education.map((degree, idx) => (
           <CardContainer key={degree._id || idx} className="inter-var mx-4">
@@ -36,15 +37,8 @@ const Page = () => {
                   translateZ="60"
                   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 inline w-full"
                 >
-                  {degree.place}<span className="float-right">&nbsp;{degree.CGPA ||degree.percentage}</span>
+                  {degree.place}<span className="float-right"> {degree.CGPA?"CGPA":"percentage"}&nbsp;{degree.CGPA ||degree.percentage}</span>
                 </CardItem>
-                {/* <CardItem
-                  as="span"
-                  translateZ="60"
-                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 float-right"
-                >
-                {degree.Grade}
-                </CardItem> */}
               </div>
               
             </CardBody>

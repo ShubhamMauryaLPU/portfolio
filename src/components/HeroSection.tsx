@@ -10,7 +10,7 @@ function HeroSection() {
         fill="white"
       />
       <div className="w-full flex flex-col lg:flex-row items-center text-white justify-center align-middle px-4 p-4 relative z-10 pt-32">
-        <div className="lg:w-2/3 w-full text-center lg:text-left lg:mb-0 lg:pl-12 lg:pt-36 md:pt-64 bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
+        <div className="lg:w-2/3 w-full text-center lg:text-left lg:mb-0 lg:pl-12 lg:pt-20 md:pt-64 bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
           <h3 className="text-lg font-semibold">Hi</h3>
           <h2 className="text-2xl font-bold">
             I'm <span className="text-red-600">Shubham Maurya</span>
@@ -27,7 +27,7 @@ function HeroSection() {
             </b>
           </p>
           <div className="mt-4 my-6 ">
-            <Link href={"/courses"}>
+            <Link href={"CV.pdf"} download={"shubham.pdf"}>
               <Button
                 borderRadius="1.75rem"
                 className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
@@ -53,7 +53,7 @@ function HeroSection() {
         </div>
         <div className="lg:w-1/3 w-full flex justify-center sm:pt-10">
           <img
-            src="../image/myImg1.png"
+            src="../image/myImg11.png"
             alt="Shubham Maurya"
             className=" h-[28rem] rounded-lg rounded-b-3xl  object-cover"
           />

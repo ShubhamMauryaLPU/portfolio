@@ -5,7 +5,7 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const About = () => {
   return (
-    <div className="py-12 bg-gray-900">
+    <div className="py-12 bg-gray-900 flex flex-col justify-center items-center">
       <div>
         <div className="text-center">
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">

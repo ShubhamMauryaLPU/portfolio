@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"; // Import Image component from next/image
+import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import "./HomeSection.css";

@@ -40,7 +40,7 @@ export default function Experience() {
         <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 mt-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <h1 className="font-bold text-xl text-white mb-4 relative w-full block">
             Stay In School | Web Application Using Pure React{" "}
-            <span className="float-right">22 Jul&apos;24</span>
+            <span className="float-right">05 Mar&apos;25</span>
           </h1>
           <p className="font-normal text-base text-slate-400 mb-4 relative">
             <b>

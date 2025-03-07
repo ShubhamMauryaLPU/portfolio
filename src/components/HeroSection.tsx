@@ -29,7 +29,7 @@ function HeroSection() {
             </b>
           </p>
           <div className="mt-4 my-6 ">
-            <Link href={"CV.pdf"} download={"shubham.pdf"}>
+            <Link href={"latest.pdf"} download={"shubhamMaurya.pdf"}>
               <Button
                 borderRadius="1.75rem"
                 className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"

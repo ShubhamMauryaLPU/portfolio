@@ -22,7 +22,7 @@ const About = () => {
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
               <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow w-[350px]">
                 <Image
-                  src="/image/myImg3.png"
+                  src="/image/patent.jpg"
                   alt="Description of the image"
                   className="rounded-lg h-96"
                   width={280}
@@ -34,11 +34,11 @@ const About = () => {
 
           <div className="flex justify-center">
             <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
-              <div className="p-4 sm:p-6 flex flex-col items-center  flex-grow">
+              <div className="p-4  flex flex-col items-center  flex-grow">
                 <p className="text-lg sm:text-xl text-black mt-4 text-center dark:text-neutral-200">
                   Detail
                 </p>
-                <p className=" text-neutral-600 dark:text-neutral-400 flex-grow text-base">
+                <p className=" text-neutral-600 pt-2 dark:text-neutral-400 flex-grow text-base">
                   <div>
                     <b>Name: </b>Shubham Kumar Maurya
                   </div>
@@ -79,11 +79,19 @@ const About = () => {
                 <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                   About Me
                 </p>
-                <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                  I am a versatile web developer, beginning my career as a fresher with a strong skill set in both frontend and backend development. I have good knowledge of databases like SQL and MongoDB.
+                <p className="text-md text-neutral-600 dark:text-neutral-400 flex-grow">
+                  I am a versatile web developer, beginning my career as a
+                  fresher with a strong skill set in both frontend and backend
+                  development. I have good knowledge of databases like SQL and
+                  MongoDB.
                 </p>
-                <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                  I have a strong command of frontend technologies, including HTML, CSS, JavaScript, and the React.js library. On the backend, I am proficient in Node.js along with the Express.js framework. Additionally, I have experience working with PHP and the Laravel framework to build robust and scalable web applications.
+                <p className="text-md text-neutral-600 dark:text-neutral-400 flex-grow">
+                  I have a strong command of frontend technologies, including
+                  HTML, CSS, JavaScript, and the React.js library. On the
+                  backend, I am proficient in Node.js along with the Express.js
+                  framework. Additionally, I have experience working with PHP
+                  and the Laravel framework to build robust and scalable web
+                  applications.
                 </p>
               </div>
             </BackgroundGradient>
